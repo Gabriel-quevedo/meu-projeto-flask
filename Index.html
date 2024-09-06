@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Verde Velas e Cosméticos Naturais</title>
+    <link rel="stylesheet" href="Css/style.css"> <!-- Caminho relativo para o CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .header-container {
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header-container nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-container nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .header-container nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cart-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 36px; /* Aumenta o tamanho do ícone */
+            color: white;
+            cursor: pointer;
+        }
+
+        .cart-icon img {
+            width: 36px; /* Ajusta o tamanho do ícone */
+            height: 36px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -10px; /* Ajuste conforme necessário */
+            right: -10px; /* Ajuste conforme necessário */
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 24px; /* Tamanho do contador */
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .collection-links {
+            text-align: center;
+            background-color: #e0e0e0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .collection-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #009688;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .collection-links a:hover {
+            background-color: #00796b;
+        }
+
+        .footer {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="cart-icon">
+            <img src="../img/carrinho-de-compras.png" alt="Carrinho de Compras"> <!-- Caminho relativo para o ícone do carrinho -->
+            <div class="cart-count">0</div> <!-- Contador de itens no carrinho -->
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="../img/Logo2.jpg" alt="Logo Aura Verde">
+    </div>
+
+    <div class="collection-links">
+        <a href="cabelo.html">Produtos para Cabelo</a>
+		<a href="pele.html">Produtos para Pele</a>
+        <a href="rosto.html">Produtos para Rosto</a>
+        <a href="todos.html">Todos os Produtos</a>
+    </div>
+
+    <!-- Carrossel -->
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <div class="commonninja_component pid-70e8dff5-3b97-4e6c-acee-4a11c445d66d"></div>
+
+    <div class="footer">
+        <p>Cosméticos Naturais, feitos à mão com muito amor e carinho.</p>
+    </div>
+</body>
+</html>
